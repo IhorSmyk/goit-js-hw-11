@@ -1,7 +1,6 @@
-import './sass/main.scss';
+import './sass/index.scss';
 import { fetchImages } from './js/fetch-images';
 import { renderGallery } from './js/render-gallery';
-import { onScroll, onToTopBtn } from './js/scroll';
 import Notiflix from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
 
@@ -17,9 +16,6 @@ const perPage = 40;
 
 searchForm.addEventListener('submit', onSearchForm);
 loadMoreBtn.addEventListener('click', onLoadMoreBtn);
-
-onScroll();
-onToTopBtn();
 
 function onSearchForm(e) {
   e.preventDefault();
